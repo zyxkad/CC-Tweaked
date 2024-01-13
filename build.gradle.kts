@@ -148,7 +148,7 @@ dependencies {
     "extraModsRuntimeOnly"(fg.deobf("mezz.jei:jei-1.18.2:9.4.1.116"))
     "extraModsCompileOnly"(fg.deobf("maven.modrinth:oculus:1.18.2-1.2.5"))
 
-    "shade"(libs.cobalt)
+    // "shade"(libs.cobalt)
 
     testFixturesApi(libs.bundles.test)
     testFixturesApi(libs.bundles.kotlin)
@@ -449,10 +449,10 @@ publishing {
     }
 
     repositories {
-        maven("https://squiddev.cc/maven") {
-            name = "SquidDev"
+        // maven("https://squiddev.cc/maven") {
+        //     name = "SquidDev"
 
-            credentials(PasswordCredentials::class)
-        }
+        //     credentials(PasswordCredentials::class)
+        // }
     }
 }
